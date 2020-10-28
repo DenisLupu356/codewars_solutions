@@ -1,0 +1,4 @@
+#https://www.codewars.com/kata/5f8a15c06dbd530016be0c19/train/python
+def duplicate_sandwich(arr):
+    lst = [i for i,el in enumerate(arr) if arr.count(el) > 1]
+    return arr[lst[0]+1:lst[1]]
