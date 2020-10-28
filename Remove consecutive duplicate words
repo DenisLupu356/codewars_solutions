@@ -1,0 +1,10 @@
+#https://www.codewars.com/kata/5b39e91ee7a2c103300018b3/train/python
+def remove_consecutive_duplicates(s):
+    s = s.split()
+    arr = []
+    for i in range(len(s)):
+        if arr == []:
+            arr.append(s[i])
+        elif s[i-1] != s[i]:
+            arr.append(s[i])
+    return " ".join(arr)
