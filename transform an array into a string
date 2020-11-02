@@ -1,0 +1,4 @@
+#https://www.codewars.com/kata/59a602dc57019008d900004e/train/python
+def transform(s):
+    s = "".join([str(el) for el in s])
+    return s
