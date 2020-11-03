@@ -1,0 +1,8 @@
+#https://www.codewars.com/kata/5c745b30f6216a301dc4dda5/train/python
+def moving_average(values,n):
+    arr = []
+    if n == 0 or n > len(values):
+        return None
+    for i in range(len(values) - n + 1):
+        arr.append(sum(values[i:i + n]) / n)
+    return arr
