@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/580a4001d6df740d61000301/train/python
+def complete_series(seq): 
+    lst = [el for el in seq if seq.count(el) > 1]
+    if lst != []:
+        return [0]
+    num = max(seq)
+    return list(range(num + 1))
