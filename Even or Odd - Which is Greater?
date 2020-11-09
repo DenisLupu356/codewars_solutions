@@ -1,0 +1,15 @@
+#https://www.codewars.com/kata/57f7b8271e3d9283300000b4/solutions/python
+def even_or_odd(s):
+    even = []
+    odd = []
+    for el in s:
+        if int(el) % 2 == 0:
+            even.append(int(el))
+        if int(el) % 2 != 0:
+            odd.append(int(el))
+    if sum(even) > sum(odd):
+        return 'Even is greater than Odd'
+    elif sum(odd) > sum(even):
+        return 'Odd is greater than Even'
+    elif sum(even) == sum(odd):
+        return 'Even and Odd are the same'
