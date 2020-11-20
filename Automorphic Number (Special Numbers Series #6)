@@ -1,0 +1,8 @@
+#https://www.codewars.com/kata/5a58d889880385c2f40000aa/train/python
+def automorphic(n):
+    num = n * n - n
+    num = str(num)
+    if num.endswith("0" * len(str(n))):
+        return "Automorphic"
+    else:
+        return "Not!!"
