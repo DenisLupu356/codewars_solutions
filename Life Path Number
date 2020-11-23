@@ -1,0 +1,25 @@
+#https://www.codewars.com/kata/5a1a76c8a7ad6aa26a0007a0/train/python
+def life_path_number(date):
+    year,month,day = date.split("-")
+    while len(str(year)) > 1:
+        s = 0
+        for el in str(year):
+            s = s + int(el)
+        year = str(s)
+    while len(str(month)) > 1:
+        s = 0
+        for el in str(month):
+            s = s + int(el)
+        month = str(s)
+    while len(str(day)) > 1:
+        s = 0
+        for el in str(day):
+            s = s + int(el)
+        day = str(s)
+    result = int(year) + int(month) + int(day)
+    while len(str(result)) > 1:
+        s = 0
+        for el in str(result):
+            s = s + int(el)
+        result = str(s)
+    return int(result)
