@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/590ee3c979ae8923bf00095b/train/python
+def color_2_grey(colors):
+    arrs = []
+    for x in colors:
+        arr = [[round(sum(el)/3)] * 3 for el in x]
+        arrs.append(arr)
+    return arrs
