@@ -9,3 +9,7 @@ def switcheroo(string):
         else:
             result += el
     return result
+#2 case:
+def vowel_2_index(string):
+    vowels = "aouieAOUIE"
+    return "".join([str(i+1) if el in vowels else el for i,el in enumerate(string) ])
