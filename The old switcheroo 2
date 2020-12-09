@@ -1,0 +1,11 @@
+#https://www.codewars.com/kata/55d6a0e4ededb894be000005/solutions/python
+def encode(string):
+    string = string.lower()
+    result = ""
+    abc = "abcdefghijklmnopqrstuvwxyz"
+    for el in string:
+        if el in abc:
+            result += str(abc.index(el) + 1)
+        else:
+            result += el
+    return result
