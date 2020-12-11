@@ -1,0 +1,11 @@
+#https://www.codewars.com/kata/56d0a591c6c8b466ca00118b/solutions/python
+def is_triangular(t):
+    t = round(t)
+    s = 0
+    arr = []
+    i = 1
+    while s < t:
+        s += i
+        i += 1
+        arr.append(s)
+    return t in arr
