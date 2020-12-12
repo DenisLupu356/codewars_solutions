@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/59619e4609868dd923000041/train/python
+def total_bill(s):
+    pizza = s.count("r")
+    free =  pizza // 5
+    pizza = pizza - free
+    return pizza * 2
