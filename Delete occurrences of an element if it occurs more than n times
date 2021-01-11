@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/554ca54ffa7d91b236000023/solutions/python
+def delete_nth(order,max_e):
+    w = []
+    for el in order:
+        if w.count(el) < max_e:
+            w.append(el)
+    return w
