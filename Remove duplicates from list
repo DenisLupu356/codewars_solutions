@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/57a5b0dfcf1fa526bb000118/solutions/python
+def distinct(seq):
+    e = []
+    for el in seq:
+        if el not in e:
+            e.append(el)
+    return e
