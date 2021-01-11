@@ -1,0 +1,10 @@
+#https://www.codewars.com/kata/5884b6550785f7c58f000047/train/python
+def group(arr):
+    w = []
+    array = []
+    for el in arr:
+        if el not in w:
+            w.append(el)
+    for el in w:
+        array.append([el] * arr.count(el))
+    return array
