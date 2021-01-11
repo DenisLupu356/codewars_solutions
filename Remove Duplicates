@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/53e30ec0116393fe1a00060b/solutions/python
+def unique(integers):
+    e = []
+    for el in integers:
+        if el not in e:
+            e.append(el)
+    return e
