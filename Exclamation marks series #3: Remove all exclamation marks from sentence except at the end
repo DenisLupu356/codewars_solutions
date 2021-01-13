@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/57faefc42b531482d5000123/train/python
+def remove(s):
+    len1= len(s)
+    len2 = len(s.rstrip("!"))
+    count = len1 - len2
+    return s.replace("!","") + "!" * count
