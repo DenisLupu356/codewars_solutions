@@ -1,0 +1,19 @@
+#https://www.codewars.com/kata/5b0148133e9715bf6f000154/solutions/python
+def hi_all():
+    a = len([[]])
+    b = len([[],[],[],[],[],[],[],[]])
+    c = len([[],[],[],[]])
+    H = len([[], [], [], [], [], []])
+    H = H*H+H*H
+    space = chr(b*c)
+    D = len([[],[],[],[],[],[],[],[],[],[]])
+    six = len([[], [], [], [], [], []])
+    H = six*six+six*six
+    l = len([[], [], [], [], [], [], [], [], []])
+    l = l*six
+    l *= len([[], []])
+    e = len([[],[],[],[],[],[],[],[],[],[]])
+    o = len([[],[],[],[],[],[],[],[],[],[]])
+    r = len([[],[],[],[],[],[],[],[],[],[]])
+    w = len([[],[],[],[],[],[],[],[]])
+    return chr(H)+chr(D*D+a) + chr(l) + chr(l)+ chr(D*D+a+D) + space + chr(b*D+a+a+a+a+a+a+a)+chr(D*D+a+D)+chr(D*D+a+D+a+a+a)+chr(l)+chr(D*D)
