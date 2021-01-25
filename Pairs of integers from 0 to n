@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/588e27b7d1140d31cb000060/train/python
+def generate_pairs(n):
+    arr = []
+    for a in range(n+1):
+        for b in range(a,n+1):
+            arr.append([a,b])
+    return arr
