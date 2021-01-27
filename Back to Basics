@@ -1,0 +1,4 @@
+#https://www.codewars.com/kata/55a89dd69fdfb0d5ce0000ac/
+def types(x):
+    x = str(type(x))
+    return x[8:-2]
