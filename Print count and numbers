@@ -1,0 +1,15 @@
+#https://www.codewars.com/kata/559af787b4b8eac78b000022/
+def count_me(data):
+    if not data.isdigit():
+        return ""
+    st = data[0]
+    for i in range(1,len(data)):
+        if data[i] == data[i-1]:
+            st += data[i]
+        else:
+            st += " " + data[i]
+    arr = st.split()
+    s = ""
+    for el in arr:
+        s += str(len(el)) + el[0]
+    return s
