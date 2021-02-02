@@ -1,0 +1,10 @@
+#https://www.codewars.com/kata/55b105503da095817e0000b6/train/python
+def count_vowels(s = ''):
+    if type(s) != str:
+        return None
+    count = 0
+    vowels = "aeuioAEUIO"
+    for el in s:
+        if el in vowels:
+            count += 1
+    return count
