@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/57efab9acba9daa4d1000b30/train/python
+def bald(s):
+    stray = s.count("/")
+    s = s.replace("/","-")
+    status = ["Clean!","Unicorn!","Homer!","Careless!","Careless!","Careless!","Hobo"]
+    return [s,status[stray]] if stray <= 5 else [s,"Hobo!"]
