@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/57d1f36705c186d018000813/train/python
+def gordon(a):
+    a = a.upper()
+    a = a.replace("A","@")
+    a = "".join([el if el not in "AOUIE" else "*" for el in a])
+    a = [el+"!!!!" for el in a.split()]
+    return " ".join(a)
