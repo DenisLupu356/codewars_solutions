@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/57e90bcc97a0592126000064/train/python
+def sea_sick(sea):
+    count = sea.count("~_") + sea.count("_~")
+    if count > len(sea) / 5:
+        return "Throw Up"
+    return "No Problem"
