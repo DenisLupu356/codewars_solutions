@@ -1,0 +1,8 @@
+#https://www.codewars.com/kata/5bc9951026f1cdc77400011c/train/python
+def baby_count(x):
+    x = x.lower()
+    b = x.count("b")
+    a = x.count("a")
+    y = x.count("y")
+    count = min(b // 2,a,y)
+    return 'Where\'s the baby?!' if count == 0 else count
