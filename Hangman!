@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/602467452b35dd0021cbf46e/
+def Hangman(guess, word):
+    word = word.lower()
+    guess = guess.lower()
+    s = "_" * len(word)
+    if guess not in word:
+        return s
+    index = word.index(guess)
+    return "_" * index + guess + "_" * (len(word) - (index + 1))
