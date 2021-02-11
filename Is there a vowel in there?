@@ -1,0 +1,14 @@
+#https://www.codewars.com/kata/57cff961eca260b71900008f/train/python
+def is_vow(inp):
+    #a = 97
+    #e = 101
+    #i = 105
+    #o = 111
+    #u = 117
+    lst = []
+    for el in inp:
+        if el in [97,101,105,111,117]:
+            lst.append(chr(el))
+        else:
+            lst.append(el)
+    return lst
