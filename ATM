@@ -1,0 +1,12 @@
+#https://www.codewars.com/kata/5635e7cb49adc7b54500001c/train/python
+def solve(n):
+    m = 0
+    m += n // 500
+    m += (n % 500) // 200
+    m += (n % 500 % 200) // 100
+    m += (n % 500 % 200 % 100) // 50
+    m += (n % 500 % 200 % 100 % 50) // 20
+    m += (n % 500 % 200 % 100 % 50 % 20) // 10
+    if n % 10 != 0:
+        m = -1
+    return m
