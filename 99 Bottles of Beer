@@ -1,0 +1,13 @@
+#https://www.codewars.com/kata/52a723508a4d96c6c90005ba/train/python
+def sing(): 
+    arr = []
+    for i in range(99,2,-1):
+        arr.append(f"{i} bottles of beer on the wall, {i} bottles of beer.")
+        arr.append(f"Take one down and pass it around, {i - 1} bottles of beer on the wall.")
+    arr.append("2 bottles of beer on the wall, 2 bottles of beer.")
+    arr.append("Take one down and pass it around, 1 bottle of beer on the wall.")
+    arr.append("1 bottle of beer on the wall, 1 bottle of beer.")
+    arr.append("Take one down and pass it around, no more bottles of beer on the wall.")
+    arr.append("No more bottles of beer on the wall, no more bottles of beer.",)
+    arr.append("Go to the store and buy some more, 99 bottles of beer on the wall.")
+    return arr
