@@ -1,0 +1,4 @@
+#https://www.codewars.com/kata/567bed99ee3451292c000025/train/python
+def is_vowel(s): 
+    s = s.lower()
+    return s in "aouie" and len(s) == 1
