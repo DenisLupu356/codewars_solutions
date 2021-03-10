@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/604517d65b464d000d51381f/train/python
+def strange_math(n, k):
+    arr = list(range(1, n+1))
+    arr = [str(el) for el in arr]
+    arr = sorted(arr)
+    return arr.index(str(k)) + 1
