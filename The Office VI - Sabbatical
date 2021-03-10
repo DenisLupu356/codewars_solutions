@@ -1,0 +1,9 @@
+#https://www.codewars.com/kata/57fe50d000d05166720000b1/
+def sabb(s, val, happiness):
+    s = s.lower()
+    lst = [el for el in s if el in "sabbatical"]
+    count = len(lst) + val + happiness
+    if count > 22:
+        return "Sabbatical! Boom!"
+    else:
+        return "Back to your desk, boy."
