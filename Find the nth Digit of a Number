@@ -1,0 +1,9 @@
+#https://www.codewars.com/kata/577b9960df78c19bca00007e/
+def find_digit(num, nth):
+    num = abs(num)
+    if nth > len(str(num)):
+        return 0
+    elif nth <= 0:
+        return -1
+    num = str(num)[::-1]
+    return int(num[nth-1])
