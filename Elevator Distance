@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/59f061773e532d0c87000d16/train/python
+def elevator_distance(array):
+    count = 0
+    for i in range(len(array) - 1):
+        count = count + abs(array[i] - array[i + 1])
+    return count
