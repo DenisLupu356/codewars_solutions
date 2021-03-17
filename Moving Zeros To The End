@@ -1,0 +1,10 @@
+#https://www.codewars.com/kata/52597aa56021e91c93000cb0/
+def move_zeros(array):
+    count = 0
+    arr = []
+    for el in array:
+        if el != 0:
+            arr.append(el)
+        else:
+            count += 1
+    return arr + [0] * count
