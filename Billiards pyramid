@@ -1,0 +1,9 @@
+#https://www.codewars.com/kata/5bb3e299484fcd5dbb002912/train/python
+def pyramid(balls):
+    count = 0
+    for i in range(1,balls+1):
+        balls = balls-i
+        count += 1
+        if balls <= i:
+            break
+    return count
