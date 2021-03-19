@@ -1,0 +1,8 @@
+#https://www.codewars.com/kata/59126992f9f87fd31600009b
+def whoseMove(lastPlayer, win):
+    if win == True:
+        return lastPlayer
+    elif win == False and lastPlayer == "black":
+        return "white"
+    elif win == False and lastPlayer == "white":
+        return "black"
