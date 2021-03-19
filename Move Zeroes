@@ -1,0 +1,8 @@
+#https://www.codewars.com/kata/588a556d4b9a4bd09a000d1b/train/python
+def move_zeroes(*arr):
+    count = arr.count(0)
+    num = []
+    for el in arr:
+        if el != 0:
+            num.append(el)
+    return sorted(num) + count * [0]
