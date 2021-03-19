@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/5a224a15ee1aaef6e100005a/train/python
+def invert_triangle(t):
+    t = t.split("\n")
+    t = "\n".join(t[::-1])
+    t = t.replace(" ","3").replace("#"," ").replace("3","#")
+    return t
