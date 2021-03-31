@@ -1,0 +1,5 @@
+#https://www.codewars.com/kata/597d75744f4190857a00008d/
+def paint_letterboxes(start, finish):
+    num = list(range(start,finish+1))
+    arr = "".join([str(el) for el in num])
+    return [arr.count(str(i)) for i in range(0,10)]
