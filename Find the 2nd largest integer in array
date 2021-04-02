@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/55a58505cb237a076100004a/
+def find_2nd_largest(arr):
+    if len(set(arr)) == 1:
+        return None
+    arr = [el for el in arr if type(el) == int]
+    arr = sorted(arr)
+    return arr[-2]
