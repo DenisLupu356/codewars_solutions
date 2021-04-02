@@ -1,0 +1,14 @@
+#https://www.codewars.com/kata/5355a811a93a501adf000ab7/train/python
+def fizz_buzz_custom(string_one="Fizz", string_two="Buzz", num_one=3, num_two=5): 
+    arr = list(range(1,101))
+    lst = []
+    for el in arr:
+        if el % num_one == 0 and el % num_two == 0:
+            lst.append(string_one + string_two)
+        elif el % (num_one) == 0:
+            lst.append(string_one)
+        elif el % (num_two) == 0:
+            lst.append(string_two)
+        else:
+            lst.append(el)
+    return lst
